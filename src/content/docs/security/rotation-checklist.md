@@ -157,7 +157,7 @@ Once deployed to production, test these services:
 
 ## Security Improvements Implemented
 
-1. **Dedicated Database Users**: Switched from `admin` superuser to dedicated application users (`mmp_app_user`, `emailblasteruser`, `mymarketingpro`)
+1. **Dedicated Database Users**: Switched from `admin` superuser to dedicated application users (`mmp_app_user`, `emailblasteruser`, `mixpostuser`)
 2. **Consolidated API Keys**: Reduced Google Maps keys from 5 to 1 for easier management
 3. **Automated Replacements**: Used scripts to ensure all occurrences were updated
 4. **Documentation**: Created secure credentials file outside git repository
