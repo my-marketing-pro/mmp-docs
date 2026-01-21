@@ -1,0 +1,110 @@
+/* Modern, shadcn-inspired styling for Starlight */
+
+:root {
+	/* Modern color palette */
+	--sl-color-accent-low: hsl(240 5% 96%);
+	--sl-color-accent: hsl(240 5.9% 10%);
+	--sl-color-accent-high: hsl(240 4.8% 95.9%);
+
+	/* Rounded corners - key shadcn feature */
+	--sl-border-radius: 0.75rem;
+	--sl-border-radius-sm: 0.5rem;
+	--sl-border-radius-lg: 1rem;
+
+	/* Modern shadows */
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Dark mode colors */
+:root[data-theme='dark'] {
+	--sl-color-accent-low: hsl(240 3.7% 15.9%);
+	--sl-color-accent: hsl(240 5.9% 90%);
+	--sl-color-accent-high: hsl(240 4.8% 95.9%);
+}
+
+/* Apply rounded corners to cards */
+.sl-markdown-content :is(pre, code, .code-block),
+.card,
+.sl-card {
+	border-radius: var(--sl-border-radius);
+}
+
+/* Modern button styling */
+button,
+.button,
+a.button {
+	border-radius: var(--sl-border-radius-sm);
+	transition: all 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-md);
+}
+
+/* Code blocks with modern styling */
+.sl-markdown-content pre {
+	border-radius: var(--sl-border-radius);
+	box-shadow: var(--shadow);
+	border: 1px solid hsl(240 5.9% 90%);
+}
+
+:root[data-theme='dark'] .sl-markdown-content pre {
+	border-color: hsl(240 3.7% 15.9%);
+}
+
+/* Tables with modern styling */
+.sl-markdown-content table {
+	border-radius: var(--sl-border-radius);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+}
+
+/* Sidebar with modern touch */
+.sidebar {
+	border-radius: var(--sl-border-radius-lg);
+}
+
+/* Search with modern styling */
+.search-input,
+input[type="search"] {
+	border-radius: var(--sl-border-radius);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid hsl(240 5.9% 90%);
+	transition: all 0.2s ease;
+}
+
+.search-input:focus,
+input[type="search"]:focus {
+	box-shadow: var(--shadow-md);
+	border-color: var(--sl-color-accent);
+}
+
+/* Modern card styling */
+.card {
+	box-shadow: var(--shadow);
+	transition: all 0.2s ease;
+}
+
+.card:hover {
+	box-shadow: var(--shadow-lg);
+	transform: translateY(-2px);
+}
+
+/* Smooth transitions */
+* {
+	transition-property: color, background-color, border-color, box-shadow, transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+/* Modern badge styling */
+.badge {
+	border-radius: 9999px;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.875rem;
+}

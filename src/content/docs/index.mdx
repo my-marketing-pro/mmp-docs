@@ -1,0 +1,63 @@
+---
+title: My Marketing Pro Documentation
+description: Developer documentation for the My Marketing Pro web application
+template: splash
+hero:
+  tagline: Complete developer guide for building, deploying, and maintaining the My Marketing Pro platform
+  actions:
+    - text: Get Started
+      link: /mmp-docs/getting-started/local-development/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/my-marketing-pro/mmp-webapp
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Welcome
+
+This documentation covers the complete My Marketing Pro web application, including local development setup, architecture details, workflows, and reference materials.
+
+<CardGrid stagger>
+  <Card title="Getting Started" icon="rocket">
+    Set up your local development environment and connect to the production database.
+  </Card>
+  <Card title="Architecture" icon="puzzle">
+    Understand the system structure, database schema, and file organization.
+  </Card>
+  <Card title="Workflows" icon="random">
+    Learn the Git workflow, development process, and deployment procedures.
+  </Card>
+  <Card title="Reference" icon="open-book">
+    Quick reference for Makefile commands and server structure.
+  </Card>
+</CardGrid>
+
+## Project Overview
+
+**My Marketing Pro** is a comprehensive marketing platform built with PHP, MySQL, and vanilla JavaScript. The application manages:
+
+- **User Management & Authentication** - OAuth integration, sessions, invitations
+- **Contacts & CRM** - Contact management, segmentation, activity tracking
+- **Campaign Management** - Email, SMS, social media, and brand advertising campaigns
+- **Messaging & Communications** - Email and SMS delivery systems
+- **Payment Processing** - Stripe integration for subscriptions and payments
+- **Analytics & Reporting** - Campaign performance and ROI tracking
+
+## Tech Stack
+
+- **Backend**: PHP 7.4+
+- **Database**: MySQL 8.0 (AWS RDS)
+- **Frontend**: Vanilla JavaScript, HTML, CSS
+- **Server**: AWS EC2 (Ubuntu) with Nginx
+- **Version Control**: Git + GitHub
+- **Development**: Local PHP server + MySQL
+
+## Quick Links
+
+- [Local Development Setup](/mmp-docs/getting-started/local-development/)
+- [Database Structure](/mmp-docs/architecture/database-structure/)
+- [Git Workflow](/mmp-docs/workflows/git/)
+- [Makefile Commands](/mmp-docs/reference/makefile/)
