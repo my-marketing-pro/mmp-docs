@@ -22,6 +22,13 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
+					label: '🚨 Security',
+					items: [
+						{ label: 'Incident Response', slug: 'security/incident-response' },
+						{ label: 'Rotation Checklist', slug: 'security/rotation-checklist' },
+					],
+				},
+				{
 					label: 'Getting Started',
 					items: [
 						{ label: 'Introduction', slug: 'index' },
