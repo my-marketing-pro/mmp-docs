@@ -10,6 +10,15 @@ export default defineConfig({
 		starlight({
 			title: 'My Marketing Pro',
 			description: 'Developer documentation for My Marketing Pro web application',
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: '/mmp-docs/password-protection.js',
+						defer: true,
+					},
+				},
+			],
 			social: [
 				{
 					icon: 'github',
