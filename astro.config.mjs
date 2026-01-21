@@ -10,9 +10,6 @@ export default defineConfig({
 		starlight({
 			title: 'My Marketing Pro',
 			description: 'Developer documentation for My Marketing Pro web application',
-			logo: {
-				src: './src/assets/logo.svg',
-			},
 			social: [
 				{
 					icon: 'github',
