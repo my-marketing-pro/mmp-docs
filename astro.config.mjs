@@ -31,13 +31,6 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: '🚨 Security',
-					items: [
-						{ label: 'Incident Response', slug: 'security/incident-response' },
-						{ label: 'Rotation Checklist', slug: 'security/rotation-checklist' },
-					],
-				},
-				{
 					label: 'Getting Started',
 					items: [
 						{ label: 'Introduction', slug: 'index' },
@@ -61,11 +54,33 @@ export default defineConfig({
 						{ label: 'Deployment', slug: 'workflows/deployment' },
 					],
 				},
+			{
+				label: 'Product Management',
+				items: [
+					{ label: 'Overview', slug: 'product-management' },
+					{ label: 'SOP Overview', slug: 'product-management/sop-overview' },
+					{ label: 'Feature Request Process', slug: 'product-management/feature-request-process' },
+					{ label: 'Release Process', slug: 'product-management/release-process' },
+					{ label: 'Frameworks & Tools', slug: 'product-management/frameworks-and-tools' },
+				],
+			},
 				{
 					label: 'Reference',
 					items: [
 						{ label: 'Makefile Commands', slug: 'reference/makefile' },
 						{ label: 'Server Structure', slug: 'reference/server-structure' },
+					],
+				},
+				{
+					label: 'Security Incidences',
+					items: [
+						{
+							label: '01/21/2026',
+							items: [
+								{ label: 'Incident Response', slug: 'security/01-21-2026/incident-response' },
+								{ label: 'Rotation Checklist', slug: 'security/01-21-2026/rotation-checklist' },
+							],
+						},
 					],
 				},
 			],
