@@ -19,7 +19,7 @@ Our pipeline follows a **four-stage progression**: Development Environment → S
 │ • Dev testing   │    │   validation    │    │ • Smoke tests   │    │ • On-call       │
 │                 │    │ • Sign-off gate │    │                 │    │   authority     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
-       Gate 1:                Gate 2:                Gate 3:
+    Gate 1:               Gate 2:                Gate 3:
     PR Approved           Stakeholder            Post-Deploy
     CI Passes             Sign-Off               Smoke Test OK
 ```
