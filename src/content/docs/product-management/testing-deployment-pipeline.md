@@ -11,7 +11,7 @@ Our pipeline follows a **four-stage progression**: Development Environment → S
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Stage 1: Dev   │───▶│ Stage 2: Staging │───▶│ Stage 3: Prod   │───▶│ Stage 4: Monitor│
+│  Stage 1: Dev   │───▶│Stage 2: Staging │───▶│  Stage 3: Prod  │───▶│ Stage 4: Monitor│
 │                 │    │                 │    │                 │    │  & Rollback     │
 │ • Feature branch│    │ • Integration   │    │ • Phased rollout│    │ • 24hr monitor  │
 │ • PR review     │    │ • QA testing    │    │ • Deploy window │    │ • Rollback      │
