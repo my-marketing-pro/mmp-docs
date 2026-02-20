@@ -7,7 +7,7 @@ This document outlines our 3-stage release process: **Founder Review → QA → 
 
 ## Release Philosophy
 
-###Principles
+### Principles
 
 **1. Rolling Releases (No Fixed Schedule)**
 - We ship when features are ready, not on a calendar
