@@ -5,17 +5,18 @@ description: Standard operating procedures, processes, and frameworks for produc
 
 Welcome to the **Product Management** documentation for My Marketing Pro. This section contains our standard operating procedures (SOPs), workflows, and best practices for building and shipping features that delight our clients.
 
-## 🎯 Our Approach
+## Our Approach
 
-We balance **client satisfaction** with **product vision**, prioritize **speed with quality**, and believe in **transparent communication** throughout the development process.
+We balance **client satisfaction** with **product vision**, prioritize **speed with quality**, and believe in **transparent communication** throughout the development process. Our goal is to be **proactive** — turning client inputs into structured dev briefs and building scalable processes, not just reacting to requests with quick fixes.
 
 Our product management philosophy:
 - **Client-first** (transitioning to product-led)
-- **Data-driven prioritization** (RICE scoring)
-- **Quality releases** (3-stage review process)
+- **Data-driven prioritization** (RICE scoring + P0-P3 severity framework)
+- **Sprint-based development** (2-week sprints with 70/20/10 capacity allocation)
+- **Quality releases** (4-stage deployment pipeline with stakeholder validation)
 - **Living documentation** (updated as we learn)
 
-## 📚 Documentation
+## Documentation
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
@@ -25,62 +26,94 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 		[View SOP Overview →](/mmp-docs/product-management/sop-overview/)
 	</Card>
+	<Card title="Team Structure & Resources" icon="seti:config">
+		Team roles, resource planning, on-call procedures, and internal tooling resilience.
+
+		[View Team Structure →](/mmp-docs/product-management/team-structure-resources/)
+	</Card>
+	<Card title="Client Submission Portal" icon="open-book">
+		Structured client feedback intake with bug report and feature request templates.
+
+		[View Portal →](/mmp-docs/product-management/client-submission-portal/)
+	</Card>
 	<Card title="Feature Request Process" icon="add-document">
-		How we intake, evaluate, prioritize, and communicate about feature requests.
+		How we intake, evaluate, prioritize (RICE + P0-P3), and communicate about feature requests.
 
 		[View Process →](/mmp-docs/product-management/feature-request-process/)
 	</Card>
+	<Card title="Development Workflow" icon="laptop">
+		Sprint planning, technical discovery, capacity management, and branching strategy.
+
+		[View Workflow →](/mmp-docs/product-management/development-workflow/)
+	</Card>
 	<Card title="Release Process" icon="rocket">
-		Our 3-stage release workflow: Founder Review → QA → Client Release.
+		Our release workflow: Founder Review → QA → Stakeholder Validation → Client Release.
 
 		[View Release Process →](/mmp-docs/product-management/release-process/)
 	</Card>
-	<Card title="Frameworks & Tools" icon="setting">
+	<Card title="Testing & Deployment Pipeline" icon="setting">
+		4-stage deployment pipeline, rollback protocols, and deployment runbook.
+
+		[View Pipeline →](/mmp-docs/product-management/testing-deployment-pipeline/)
+	</Card>
+	<Card title="Frameworks & Tools" icon="list-format">
 		PM frameworks (RICE, JTBD, ICE, Kano, OKRs), user stories, and recommended tools.
 
 		[View Frameworks →](/mmp-docs/product-management/frameworks-and-tools/)
 	</Card>
 </CardGrid>
 
-## 👥 Team Roles
+## Team Roles
 
-- **Product Manager**: Prioritization, roadmap, stakeholder communication
-- **Founder**: Final decision maker, strategic direction
-- **Account Manager**: Client liaison, feature requests from clients
-- **Development Team**: Implementation, technical feasibility
-- **Sales Team**: Revenue-impacting feature requests
+For the full team roster and detailed role definitions, see [Team Structure & Resources](/mmp-docs/product-management/team-structure-resources/).
 
-## 🚀 Quick Start
+- **Product Lead**: Prioritization, roadmap, stakeholder communication, dev briefs (business side, hands-off-keys)
+- **Dev Lead**: Technical leadership, team management, code quality, architecture (technical side, hands-on-keys)
+- **R&D Lead / Founder**: Product-market fit, strategic direction, final approval on features
+- **Account Manager**: Client liaison, submits bug reports and feature requests
+- **Sales Team**: Revenue-impacting feature requests, competitive insights
 
-**New to product management?** Start here:
+## Quick Start
 
-1. Read the [SOP Overview](/mmp-docs/product-management/sop-overview/) to understand our philosophy
-2. Review the [Feature Request Process](/mmp-docs/product-management/feature-request-process/) for day-to-day work
-3. Familiarize yourself with [Frameworks & Tools](/mmp-docs/product-management/frameworks-and-tools/)
-4. Check the [Release Process](/mmp-docs/product-management/release-process/) before shipping features
+**New to product management at MMP?** Start here:
 
-**Handling a feature request?**
-1. Log it in Linear with the `feature-request` label
-2. Triage within 48 hours (see [Feature Request Process](/mmp-docs/product-management/feature-request-process/))
-3. Score with RICE framework
+1. Review the [Team Structure](/mmp-docs/product-management/team-structure-resources/) to understand who does what
+2. Read the [SOP Overview](/mmp-docs/product-management/sop-overview/) for our philosophy and principles
+3. Learn the [Client Submission Portal](/mmp-docs/product-management/client-submission-portal/) for how feedback flows in
+4. Study the [Feature Request Process](/mmp-docs/product-management/feature-request-process/) for triage and prioritization
+5. Understand the [Development Workflow](/mmp-docs/product-management/development-workflow/) for sprint-based execution
+6. Check the [Release Process](/mmp-docs/product-management/release-process/) and [Deployment Pipeline](/mmp-docs/product-management/testing-deployment-pipeline/) before shipping
+
+**Handling a bug report or feature request?**
+1. Log it in Linear using the templates from the [Client Submission Portal](/mmp-docs/product-management/client-submission-portal/)
+2. Triage within 48 business hours — assign P0-P3 severity and/or RICE score
+3. Route to appropriate stakeholders (see [intake workflow](/mmp-docs/product-management/client-submission-portal/#intake-processing-workflow))
 4. Communicate decision back to requester
+
+**Planning a sprint?**
+1. Follow the [Sprint Planning Agenda](/mmp-docs/product-management/development-workflow/#sprint-planning)
+2. Allocate capacity: 70% planned work, 20% bugs/tech debt, 10% escalation buffer
+3. Ensure every item has clear acceptance criteria
+4. Identify on-call developer for the sprint
 
 **Releasing a feature?**
 1. Schedule founder review (1:1 demo)
 2. QA with team members
-3. Deploy to production with release notes
-4. Monitor for 24 hours
+3. Stakeholder validation in staging (explicit sign-off for client-facing changes)
+4. Deploy during deployment window (Tue-Thu, 10 PM - 2 AM EST)
+5. Monitor for 24 hours
 
-## 🛠️ Tools We Use
+## Tools We Use
 
-- **Linear**: Feature tracking, issue management, sprint planning
+- **Linear**: Feature tracking, bug reporting, sprint planning, roadmap
 - **Google Chat**: Day-to-day communication
-- **Git/GitHub**: Version control, code review
-- **Staging Environment**: Pre-production testing
+- **Git/GitHub**: Version control, feature branches, pull requests, code review
+- **Staging Environment**: Pre-production testing and stakeholder validation
+- **Error Tracking**: Production monitoring (Sentry, logs)
 
-## 📞 Questions?
+## Questions?
 
-Have questions about product management at MMP? Reach out to the Product Manager or check our internal chat.
+Have questions about product management at MMP? Reach out to the Product Lead or check our internal chat.
 
 ---
 

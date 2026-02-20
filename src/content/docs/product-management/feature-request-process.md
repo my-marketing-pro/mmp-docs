@@ -15,7 +15,9 @@ This document outlines our complete workflow for handling feature requests from 
 
 ## 1. Intake Process
 
-###Sources of Feature Requests
+For a comprehensive look at how all client feedback (bugs and feature requests) is submitted, categorized, and processed, see the [Client Submission Portal](/mmp-docs/product-management/client-submission-portal/).
+
+### Sources of Feature Requests
 
 Feature requests come from 5 primary sources:
 
@@ -165,6 +167,44 @@ Based on answers above, classify the request:
 - **Action:** Decline with empathy, provide alternative if possible, revisit quarterly
 - **Example:** "Add dark mode to admin panel"
 
+## Severity Framework (P0-P3)
+
+In addition to RICE scoring for feature prioritization, we use a severity-based framework for bugs and urgent issues. This determines **response time SLAs** independent of the RICE score.
+
+### Severity Levels
+
+| Severity | Definition | Target Resolution | Examples |
+|----------|-----------|-------------------|----------|
+| **P0 - Critical** | System outages, data loss, security vulnerabilities, or issues blocking multiple enterprise clients | **24-48 hours** | Production down, payment processing broken, data breach, login failure for all users |
+| **P1 - High** | Major feature broken, significant user experience degradation, or enterprise client escalation | **1-2 weeks** | Email sending fails intermittently, dashboard shows incorrect data, key client threatening churn |
+| **P2 - Medium** | Minor bugs, feature enhancements with clear ROI, or requests from multiple clients | **1-2 sprints** | Formatting issue in reports, slow page load on one screen, enhancement requested by 3+ clients |
+| **P3 - Low** | Nice-to-have features, cosmetic issues, or single-client requests with workarounds available | **Backlog planning** | Button alignment off by a few pixels, request for dark mode, edge case affecting one user |
+
+### How P0-P3 Works Alongside RICE
+
+These two frameworks serve different purposes and complement each other:
+
+- **P0-P3 Severity** → Determines **urgency and response time** (how fast we act)
+- **RICE Score** → Determines **strategic priority and roadmap placement** (what we build next)
+
+**In practice:**
+- A P0 bug bypasses RICE — it gets fixed immediately regardless of score
+- A P1 bug enters the current or next sprint from the 10%/20% buffer
+- P2/P3 items get RICE scored if they're feature requests or enhancements
+- A low-RICE feature request from a single client might still be P1 if it's an enterprise escalation
+
+### Assignment Guidelines
+
+| Situation | Use... | Action |
+|-----------|--------|--------|
+| Production is down | P0 severity | Immediate response, all-hands if needed |
+| Major feature broken | P1 severity | Next sprint or pull from buffer |
+| Client wants a new feature | RICE score | Score it, place on roadmap |
+| Bug + feature request together | Both | P-level for the bug, RICE for the enhancement |
+| Enterprise client escalation | P1 minimum + RICE | Fast-track with R&D Lead input |
+
+For detailed bug report templates and intake processing, see the [Client Submission Portal](/mmp-docs/product-management/client-submission-portal/).
+
 ## 3. RICE Scoring Framework
 
 For all **Strategic Fit** requests (and sometimes Revenue-Impacting), use RICE scoring to prioritize objectively.
@@ -297,6 +337,12 @@ Use this spreadsheet template or Linear custom fields:
 - **Google Sheets:** Simple RICE calculator spreadsheet
 - **Linear Custom Fields:** Add Reach/Impact/Confidence/Effort fields, calculate in spreadsheet
 - **Notion Database:** RICE formula built-in
+
+### Triage Calibration
+
+To ensure consistent prioritization across the team, we hold a weekly **Triage Calibration Meeting** (30 minutes). The team reviews 3-5 prioritization decisions from the previous week to check alignment on severity classifications and RICE scores. This prevents priority creep and keeps everyone interpreting criteria the same way.
+
+See [Development Workflow - Triage Calibration](/mmp-docs/product-management/development-workflow/#triage-calibration-meeting) for the full meeting format and agenda.
 
 ## 4. Prioritization Decision
 

@@ -59,8 +59,12 @@ export default defineConfig({
 				items: [
 					{ label: 'Overview', slug: 'product-management' },
 					{ label: 'SOP Overview', slug: 'product-management/sop-overview' },
+					{ label: 'Team Structure & Resources', slug: 'product-management/team-structure-resources' },
+					{ label: 'Client Submission Portal', slug: 'product-management/client-submission-portal' },
 					{ label: 'Feature Request Process', slug: 'product-management/feature-request-process' },
+					{ label: 'Development Workflow', slug: 'product-management/development-workflow' },
 					{ label: 'Release Process', slug: 'product-management/release-process' },
+					{ label: 'Testing & Deployment Pipeline', slug: 'product-management/testing-deployment-pipeline' },
 					{ label: 'Frameworks & Tools', slug: 'product-management/frameworks-and-tools' },
 				],
 			},

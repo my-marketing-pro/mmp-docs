@@ -260,6 +260,37 @@ Test in these browsers:
 - List of known minor issues (if any)
 - Estimated release date/time
 
+## Stage 2.5: Stakeholder Validation
+
+After QA and before production deployment, the feature must be validated by the stakeholders who requested it.
+
+### Who Validates
+
+| Change Type | Required Approval | Process |
+|-------------|-------------------|---------|
+| **Client-facing feature** | Product Lead + Account Manager (representing client) | Demo in staging, explicit sign-off required |
+| **Client-requested bug fix** | Product Lead + Account Manager confirms fix | Verify in staging, confirm original issue resolved |
+| **Internal feature** | Product Lead | Review in staging, confirm acceptance criteria met |
+| **Technical/infrastructure** | Dev Lead + Product Lead | Verify functionality, no user-facing regression |
+
+### Sign-Off Process
+
+1. Product Lead schedules a staging review with the relevant stakeholders
+2. Stakeholders test the feature against the original request and acceptance criteria
+3. Feedback is documented in the Linear issue:
+   - **Approved:** "Stakeholder sign-off: [name], [date]"
+   - **Changes needed:** Specific feedback, back to development
+4. Client-facing changes **must have explicit Product Lead approval** before production deployment
+
+### Why This Stage Matters
+
+- Ensures we built what was actually requested (not our interpretation of it)
+- Catches UX issues that QA testing might miss (stakeholders know their workflows)
+- Gives clients confidence that their feedback drives real change
+- Prevents "we shipped it but nobody wanted this" situations
+
+For the full technical deployment process including rollback protocols, see the [Testing & Deployment Pipeline](/mmp-docs/product-management/testing-deployment-pipeline/).
+
 ## Stage 3: Client Release
 
 ### Pre-Deployment Checklist
@@ -284,6 +315,8 @@ Before hitting deploy:
   - Lock file updated
 
 ### Deployment
+
+For the complete technical deployment pipeline including deployment windows, feature flags, rollback triggers, and deployment communication templates, see the [Testing & Deployment Pipeline](/mmp-docs/product-management/testing-deployment-pipeline/).
 
 **Process:** (Adapt to your specific deployment workflow)
 
