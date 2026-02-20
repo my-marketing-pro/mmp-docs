@@ -66,6 +66,7 @@ export default defineConfig({
 					{ label: 'Release Process', slug: 'product-management/release-process' },
 					{ label: 'Testing & Deployment Pipeline', slug: 'product-management/testing-deployment-pipeline' },
 					{ label: 'Frameworks & Tools', slug: 'product-management/frameworks-and-tools' },
+					{ label: 'Resources', slug: 'product-management/resources' },
 				],
 			},
 				{
