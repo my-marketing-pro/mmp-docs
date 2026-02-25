@@ -70,6 +70,15 @@ export default defineConfig({
 				],
 			},
 				{
+				label: 'Mobile App Development',
+				items: [
+					{ label: 'Overview', slug: 'mobile-app' },
+					{ label: 'Launch Timeline', slug: 'mobile-app/launch-timeline' },
+					{ label: 'Push Notification Strategy', slug: 'mobile-app/push-notification-strategy' },
+					{ label: 'App Store Submission', slug: 'mobile-app/app-store-submission' },
+				],
+			},
+			{
 					label: 'Reference',
 					items: [
 						{ label: 'Makefile Commands', slug: 'reference/makefile' },

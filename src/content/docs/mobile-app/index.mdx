@@ -1,0 +1,81 @@
+---
+title: Mobile App Development
+description: Launch plan, timeline, and documentation for the My Marketing Pro mobile application
+---
+
+The My Marketing Pro mobile app brings the full MMP platform to iOS and Android devices. This section documents our launch plan, technical architecture, and the path to getting the app live on both app stores.
+
+## Current State
+
+The mobile app is a **Flutter WebView wrapper** that loads the MMP web application (app.mymarketingpro.com). The native shell is feature-complete:
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Flutter WebView shell | Complete | Points to app.mymarketingpro.com |
+| Firebase push notifications | Integrated | FCM token handling, topic subscription, foreground/background |
+| OAuth (Google, Facebook, LinkedIn, Apple) | Working | Google uses external browser per policy |
+| Session persistence | Working | Cookie bridge, secure storage |
+| Onboarding flow | Complete | 6-slide carousel with permission prompts |
+| Offline detection | Working | Banner notification when connectivity lost |
+| App icons & splash screen | Configured | iOS and Android assets generated |
+| CI/CD pipelines | Active | GitHub Actions + Fastlane for both platforms |
+| App store signing | Configured | Keystores (Android), certificates (iOS) |
+
+**What's blocking launch:**
+1. Web app needs mobile-first responsive cleanup (partially responsive today)
+2. Push notification admin portal needed for non-developer users
+3. Programmatic push notification rules need to be defined
+4. App store submission assets, copy, and legal compliance
+
+## Tech Stack
+
+- **Framework:** Flutter 3.24+ (Dart 3.6 SDK)
+- **WebView:** `webview_flutter` with custom cookie manager
+- **Push Notifications:** Firebase Cloud Messaging + `flutter_local_notifications`
+- **Auth:** `flutter_web_auth_2` + `flutter_secure_storage`
+- **Build Tools:** Fastlane (iOS & Android), GitHub Actions CI/CD
+- **Platforms:** iOS 13.0+, Android SDK 21+
+- **Bundle ID:** `com.mymarketingpro.app` (both platforms)
+
+## Launch Roadmap
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+	<Card title="Launch Timeline" icon="rocket">
+		Sprint-by-sprint plan from planning through app store approval, with team capacity scenarios.
+
+		[View Timeline →](/mmp-docs/mobile-app/launch-timeline/)
+	</Card>
+	<Card title="Push Notification Strategy" icon="forward-slash">
+		Admin portal options, programmatic notification rules, and current Firebase setup.
+
+		[View Strategy →](/mmp-docs/mobile-app/push-notification-strategy/)
+	</Card>
+	<Card title="App Store Submission" icon="document">
+		Complete checklists for Google Play and Apple App Store submission and approval.
+
+		[View Checklist →](/mmp-docs/mobile-app/app-store-submission/)
+	</Card>
+</CardGrid>
+
+## Key Decisions Needed
+
+Before development begins, the following decisions require R&D Lead input:
+
+1. **Team allocation** — How many developers on this project? (Affects timeline by months)
+2. **Push notification portal location** — Build into existing admin panel vs. standalone tool
+3. **Programmatic notification rules** — What triggers notifications and what do they say?
+4. **Launch priority** — Which platform first (simultaneous, Android first, iOS first)?
+
+## Related Documentation
+
+- [Development Workflow](/mmp-docs/product-management/development-workflow/) — Sprint planning, capacity allocation, dev briefs
+- [Testing & Deployment Pipeline](/mmp-docs/product-management/testing-deployment-pipeline/) — QA process, staging validation, rollback
+- [Release Process](/mmp-docs/product-management/release-process/) — Founder 1:1 review, stakeholder validation
+- [Team Structure & Resources](/mmp-docs/product-management/team-structure-resources/) — Resource planning, on-call
+
+---
+
+**Last Updated**: February 2026
+**Owner**: Product Lead
