@@ -12,7 +12,7 @@ This document defines our team structure, resource allocation strategies, and pl
 | Juan Zamudio | Product Lead | Business side, hands-off-keys |
 | Umair Ali | Dev Lead | Technical side, hands-on-keys |
 | Frank O'Brien | R&D Lead | Product-market fit, strategic direction |
-| Memory Harkins | Account Manager | Client liaison, feedback intake |
+| Memory Harkins | Client Success Lead | Client liaison, feedback intake |
 | TBD | Sales Team | Revenue-impacting requests, competitive insights |
 
 ---
@@ -78,7 +78,7 @@ Throughout these docs, we use **role titles** (not names) to keep processes scal
 - Veto power on technical approach when business implications are significant
 - Approves resource additions and budget decisions
 
-### Account Manager
+### Client Success Lead
 
 **Key Responsibilities:**
 - Collect feature requests and bug reports from clients
@@ -263,7 +263,7 @@ To get internal tools on independent infrastructure, present the following to th
 | Who prioritizes work? | Product Lead (RICE + P0-P3) with R&D Lead final approval |
 | Who assigns tasks to developers? | Dev Lead |
 | Who handles production rollbacks? | On-call developer (authority to rollback without approval) |
-| Who communicates with clients? | Account Manager (day-to-day), Product Lead (decisions/status) |
+| Who communicates with clients? | Client Success Lead (day-to-day), Product Lead (decisions/status) |
 | What happens when a dev is pulled from sprint? | Follow resource reassignment process, adjust sprint scope |
 | Where are internal tools hosted? | SaaS (Linear) now; future custom tools on independent infrastructure |
 

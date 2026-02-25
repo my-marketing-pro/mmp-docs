@@ -23,8 +23,8 @@ Feature requests come from 5 primary sources:
 
 | Source | How They Submit | Who Processes |
 |--------|-----------------|---------------|
-| **Clients** | Through account manager | Account manager logs in Linear |
-| **Account Manager** | Direct submission (uses tool daily) | Account manager logs in Linear |
+| **Clients** | Through Client Success Lead | Client Success Lead logs in Linear |
+| **Client Success Lead** | Direct submission (uses tool daily) | Client Success Lead logs in Linear |
 | **Sales Team** | Google Chat or direct to PM | PM logs in Linear |
 | **Internal Team** | Linear or Google Chat | PM logs in Linear |
 | **Founder** | Direct conversation with PM | PM logs in Linear |
@@ -227,7 +227,7 @@ It's a quantitative prioritization formula that helps us compare apples-to-apple
 **Examples:**
 - All clients send emails → Reach = 50 (if we have 50 clients)
 - Only enterprise clients → Reach = 5
-- Account manager uses daily → Reach = 1 (but high frequency)
+- Client Success Lead uses daily → Reach = 1 (but high frequency)
 
 **Tips:**
 - Use quarterly timeframe (90 days) for consistency

@@ -77,7 +77,7 @@ Once a feature branch is merged (or deployed to staging from the branch), QA tes
 
 **For client-facing changes:**
 - Client-facing features require **explicit sign-off** from the Product Lead before production deployment
-- If the feature was requested by a specific client, the Account Manager reviews from the client's perspective
+- If the feature was requested by a specific client, the Client Success Lead reviews from the client's perspective
 - Sign-off is documented in the Linear issue (comment: "Stakeholder sign-off: [name], [date]")
 
 **For internal changes:**
@@ -206,7 +206,7 @@ The **on-call developer has authority to execute rollback without additional app
 3. **Verify rollback** — Smoke test that the previous version works correctly
 4. **Communicate:**
    - Team: "Rollback executed for [deployment]. Issue: [brief description]. Investigating."
-   - Clients (if affected): Account Manager sends brief notification
+   - Clients (if affected): Client Success Lead sends brief notification
 5. **Investigate root cause** — Why did this pass staging? What was missed?
 6. **Post-mortem** — Schedule within 24 hours (see below)
 

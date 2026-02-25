@@ -15,7 +15,7 @@ We currently use **Linear** as our submission and tracking tool. All client feed
 
 | Channel | Flow | Who Logs It |
 |---------|------|-------------|
-| Client → Account Manager | AM collects details, logs in Linear | Account Manager |
+| Client → Client Success Lead | CSL collects details, logs in Linear | Client Success Lead |
 | Client → Support Email | PM reviews, logs in Linear | Product Lead |
 | Client → Direct (if configured) | Client submits via Linear form | Client (auto-logged) |
 | Internal team observation | Team member identifies issue | Any team member |
@@ -30,7 +30,7 @@ Use this template when logging client-reported bugs in Linear:
 ## Bug Report
 
 **Reporter**: [Client name, company]
-**Reported via**: Account Manager | Support Email | Direct
+**Reported via**: Client Success Lead | Support Email | Direct
 **Date Reported**: [YYYY-MM-DD]
 **Environment**: Production | Staging
 
@@ -74,7 +74,7 @@ Use this template when logging client feature requests. This is the client-facin
 ## Feature Request
 
 **Requester**: [Client name, company]
-**Submitted by**: [Account Manager name or direct]
+**Submitted by**: [Client Success Lead name or direct]
 **Date Submitted**: [YYYY-MM-DD]
 
 ### What problem are you trying to solve?
@@ -201,7 +201,7 @@ This data feeds into sprint planning and quarterly roadmap reviews.
 
 ## Future Vision: Custom Client Portal
 
-While Linear works well for internal tracking, a purpose-built client submission portal would give clients direct visibility and reduce the Account Manager bottleneck.
+While Linear works well for internal tracking, a purpose-built client submission portal would give clients direct visibility and reduce the Client Success Lead bottleneck.
 
 ### What It Would Look Like
 
@@ -213,7 +213,7 @@ While Linear works well for internal tracking, a purpose-built client submission
 
 ### Why Build It
 
-- **Scales better** than routing everything through Account Managers
+- **Scales better** than routing everything through the Client Success Lead
 - **Reduces communication overhead** — clients check status themselves
 - **Better data** — structured submissions with required fields, less back-and-forth
 - **Transparency** — clients see their feedback matters (builds trust)

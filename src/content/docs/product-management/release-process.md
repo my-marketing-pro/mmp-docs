@@ -125,7 +125,7 @@ The PM presents and founder evaluates:
 - Builds empathy (team sees features before clients)
 
 **Who rotates:**
-- Account manager (tests from client perspective)
+- Client Success Lead (tests from client perspective)
 - Developer not involved in building this feature
 - Sales team member (tests for demos)
 - Founder (if they want to stay involved)
@@ -268,8 +268,8 @@ After QA and before production deployment, the feature must be validated by the 
 
 | Change Type | Required Approval | Process |
 |-------------|-------------------|---------|
-| **Client-facing feature** | Product Lead + Account Manager (representing client) | Demo in staging, explicit sign-off required |
-| **Client-requested bug fix** | Product Lead + Account Manager confirms fix | Verify in staging, confirm original issue resolved |
+| **Client-facing feature** | Product Lead + Client Success Lead (representing client) | Demo in staging, explicit sign-off required |
+| **Client-requested bug fix** | Product Lead + Client Success Lead confirms fix | Verify in staging, confirm original issue resolved |
 | **Internal feature** | Product Lead | Review in staging, confirm acceptance criteria met |
 | **Technical/infrastructure** | Dev Lead + Product Lead | Verify functionality, no user-facing regression |
 

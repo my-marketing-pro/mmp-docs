@@ -67,7 +67,7 @@ This document outlines our standard operating procedures for product management 
 - Can override RICE scores based on business needs
 - Veto power on technical approach
 
-### Account Manager
+### Client Success Lead
 
 **Key Responsibilities:**
 - Collect feature requests from clients
@@ -224,7 +224,7 @@ See [Release Process](/mmp-docs/product-management/release-process/) for detaile
 
 **When:** Every Monday, 10am
 **Duration:** 30 minutes
-**Attendees:** PM, founder, dev team, account manager
+**Attendees:** PM, founder, dev team, Client Success Lead
 
 **Agenda:**
 1. Last week's releases (metrics, feedback)
@@ -236,7 +236,7 @@ See [Release Process](/mmp-docs/product-management/release-process/) for detaile
 ### Stakeholder Updates
 
 **Frequency:** Bi-weekly email
-**Recipients:** Founder, account manager, sales team
+**Recipients:** Founder, Client Success Lead, sales team
 
 **Content:**
 - Shipped features (with links to release notes)

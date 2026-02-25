@@ -334,7 +334,7 @@ Then [expected result].
 
 **User Story:**
 ```
-As an account manager,
+As a Client Success Lead,
 I want to bulk import contacts from a CSV file,
 So that I can quickly onboard new clients without manual data entry.
 ```

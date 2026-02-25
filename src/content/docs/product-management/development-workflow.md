@@ -113,7 +113,7 @@ Can be async (posted in team chat by 10 AM) or synchronous for teams that prefer
 - Dev team demos completed work to stakeholders
 - Product Lead confirms acceptance criteria are met
 - R&D Lead provides feedback on strategic alignment
-- Account Manager provides client perspective
+- Client Success Lead provides client perspective
 
 **Sprint Retrospective (30 minutes)**
 - What went well this sprint?
